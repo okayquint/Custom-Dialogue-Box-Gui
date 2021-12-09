@@ -3,4 +3,4 @@
 -------------------
 
 Please note:
--This script is designed to function **on part click.** 
+- This script is designed to function **on part click.** 
