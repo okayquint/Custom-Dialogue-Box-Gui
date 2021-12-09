@@ -1,6 +1,9 @@
-local button = game.Workspace.clickablePart -- CHANGE clickablePart to the name of your clickable part. This part is what the player will click to fire the script.
-local clickDetector = script.Parent -- Obviously, clickDetector should be a child of clickablePart.
-local Dialogue = game.ReplicatedStorage.ScreenGui -- Obviously, your ScreenGui should be a child of ReplicatedStorage.
+local button = game.Workspace.clickablePart 
+-- CHANGE clickablePart to the name of your clickable part. This part is what the player will click to fire the script.
+local clickDetector = script.Parent 
+-- Obviously, clickDetector should be a child of clickablePart.
+local Dialogue = game.ReplicatedStorage.ScreenGui 
+-- Obviously, your ScreenGui should be a child of ReplicatedStorage.
 
 local function onClicked(player)
 	local DialogueClone = Dialogue:Clone()
