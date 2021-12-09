@@ -1,9 +1,13 @@
+--[[Custom Dialogue Box Gui - OkayQuint]]--
+--[[2021, powered by GitHub]]--
+
 local button = game.Workspace.clickablePart 
 -- CHANGE clickablePart to the name of your clickable part. This part is what the player will click to fire the script.
 local clickDetector = script.Parent 
 -- Obviously, clickDetector should be a child of clickablePart.
 local Dialogue = game.ReplicatedStorage.ScreenGui 
 -- Obviously, your ScreenGui should be a child of ReplicatedStorage.
+-- Add more variables if you want to do things like change the GUI's frame color, text font, etc. Otherwise, minus text/sprites, it will look the same as you designed it.
 
 local function onClicked(player)
 	local DialogueClone = Dialogue:Clone()
@@ -13,15 +17,19 @@ local function onClicked(player)
 	Dialogue.Frame.ImageLabel.Image = "rbxassetid://yourspriteid" -- If you don't want a sprite/image, remove this line.
 	local DialogueClone2 = Dialogue:Clone()
 	DialogueClone2.Parent = player.PlayerGui
-	wait(5) -- Waits 5 seconds before changing to the next dialogue box. Make it higher or lower depending on your taste.
+	wait(5) 
+	-- Waits 5 seconds before changing to the next dialogue box. Make it higher or lower depending on your taste.
 	Dialogue.Frame.TextLabel.Text = ("Insert Your Next Text Here")
 	Dialogue.Frame.ImageLabel.Image = "rbxassetid://yourspriteid"
 	local DialogueClone3 = Dialogue:Clone()
 	DialogueClone3.Parent = player.PlayerGui
 	wait(5)
+	--If you want to add MORE dialogue before ending the cutscene, after the wait command, copy and paste the text-changing, sprite-changing, and clone/parenting lines. Remember to change "DialogueClone2" to "DialogueCLone3", and so on.
 	DialogueClone3:Destroy()
 	DialogueClone2:Destroy()
 	DialogueClone:Destroy()
+	--Destroys all the GUIs so that the cutscene can end. If you add more DialogueClones, DON'T FORGET TO DESTROY THEM TOO, or they'll stay there forever.
 end
 
 clickDetector.MouseClick:Connect(onClicked)
+--Fires onClicked when the mouse clicks. Change both this AND the function if you want to change the activation method. The script will work with any method.
