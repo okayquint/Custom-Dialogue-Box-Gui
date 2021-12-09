@@ -8,6 +8,7 @@ Please note:
 - If you want to change the names of the ScreenGui, Frame, etc, make sure you do that in the script too. Otherwise, obviously, it won't work.
 - The script should be a child of a ClickDetector, which should be a child of the *Part you want the player to click for the dialogue to fire.* 
 - The ScreenGui should be a child of "ReplicatedStorage".
+- You don't have to remove anything "-- written like this" or "--[[written like this]]". If it's written with two hyphens in the front, the script won't run it.
 
 There are no other parameters, assuming that you did everything correctly. Forward any questions to my Twitter dms: [@M7TTHOOPER](https://twitter.com/M7TTHOOPER)
 
