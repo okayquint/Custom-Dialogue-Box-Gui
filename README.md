@@ -9,4 +9,7 @@ Please note:
 - The script should be a child of a ClickDetector, which should be a child of the *Part you want the player to click for the dialogue to fire.* 
 - The ScreenGui should be a child of "ReplicatedStorage".
 
-There are no other parameters, assuming that you did everything correctly. Forward any questions to my Twitter dms: [M7TTHOOPER](https://twitter.com/M7TTHOOPER).
+There are no other parameters, assuming that you did everything correctly. Forward any questions to my Twitter dms: [@M7TTHOOPER](https://twitter.com/M7TTHOOPER)
+Please remember to credit me somewhere in your game -- either as a "contributor" or a "helper" is fine.
+
+Enjoy! Have fun! :)
