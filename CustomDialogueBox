@@ -1,0 +1,24 @@
+local button = game.Workspace.clickablePart --CHANGE clickablePart to the name of your clickable part. This part is what the player will click to fire the script.
+local clickDetector = script.Parent --Obviously, clickDetector should be a child of clickablePart.
+local Dialogue = game.ReplicatedStorage.ScreenGui --Obviously, your ScreenGui should be a child of ReplicatedStorage.
+
+local function onClicked(player)
+	local DialogueClone = Dialogue:Clone()
+	DialogueClone.Parent = player.PlayerGui
+	wait(5)
+	Dialogue.Frame.TextLabel.Text = ("This is a demonstration of the dialogue/sprite system....")
+	Dialogue.Frame.ImageLabel.Image = "rbxassetid://8190708321"
+	local DialogueClone2 = Dialogue:Clone()
+	DialogueClone2.Parent = player.PlayerGui
+	wait(5)
+	Dialogue.Frame.TextLabel.Text = ("Anyways.... cya!")
+	Dialogue.Frame.ImageLabel.Image = "rbxassetid://8190707130"
+	local DialogueClone3 = Dialogue:Clone()
+	DialogueClone3.Parent = player.PlayerGui
+	wait(5)
+	DialogueClone3:Destroy()
+	DialogueClone2:Destroy()
+	DialogueClone:Destroy()
+end
+
+clickDetector.MouseClick:Connect(onClicked)
