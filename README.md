@@ -12,6 +12,4 @@ Please note:
 
 There are no other parameters, assuming that you did everything correctly. Forward any questions to my Twitter dms: [@ROBCTNIK](https://twitter.com/ROBCTNIK)
 
-Oh, and **please remember to credit me somewhere in your game -- either as a "contributor" or a "helper" is fine.** 
-
 Enjoy! Have fun! :)
