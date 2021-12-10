@@ -10,7 +10,7 @@ Please note:
 - The ScreenGui should be a child of "ReplicatedStorage".
 - Please do not remove my credit at the top of the script. Otherwise, everything else is free use.
 
-There are no other parameters, assuming that you did everything correctly. Forward any questions to my Twitter dms: [@M7TTHOOPER](https://twitter.com/M7TTHOOPER)
+There are no other parameters, assuming that you did everything correctly. Forward any questions to my Twitter dms: [@ROBCTNIK](https://twitter.com/ROBCTNIK)
 
 Oh, and **please remember to credit me somewhere in your game -- either as a "contributor" or a "helper" is fine.** 
 
